@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,100;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgb(38, 184, 232);
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 50px;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: whitesmoke;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+
+
+ .container .left-side {
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+
+.ProfileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+}
+ 
+.ProfileText .imgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ProfileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ProfileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+
+.contactinfo {
+  padding-top: 40px;
+}
+.title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  background: #0c7468;
+  text-align: center;
+}
+
+.contactinfo ul {
+  position: relative;
+}
+
+.contactinfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+}
+
+.contactinfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.contactinfo ul li a {
+  color: white;
+  font-weight: 300; 
+  text-decoration: none;
+}
+
+.pendidikan {
+  margin-top: 30px;
+}
+
+.pendidikan li{
+  margin-bottom: 15px;
+}
+
+.pendidikan h5 {
+  color: #03a9f4;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.pendidikan h4:nth-child(2) {
+  color: #fff;
+  font-weight: 600 ;
+}
+
+.pendidikan h4{
+  color: #fff;
+  font-weight: 300 ;
+}
+.container .right-side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+
+.tentang {
+  margin-bottom: 50px;
+}
+
+.tentang:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #333;
+  font-weight: 400;
+}
+
+.tentang .box {
+  display: grid;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.tentang .box .year {
+  min-width: 150px;
+}
+
+.tentang .box .year h5 {
+  color: #5c6062;
+  font-weight: 600;
+}
+
+.tentang .box .year h4 {
+  color: #2a7da2;
+  font-size: 15px;
+}
+
+.skill {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.skill h4 {
+  margin-bottom: 5px;
+  color: #5c6062;
+}
+
+.hobi .ikon {
+  position: relative;
+  font-size: 15px;
+  color: #333;
+  font-weight: 510;
+}
+
+.hobi ul {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.contactinfo ul li .text:hover {
+  background-color: rgb(43, 153, 227);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  transition: 0.5s;
+  font-size: 16.3px;
+  text-decoration: underline 1px;
+  transition-timing-function: ease-out;
+}
+
+.contactinfo ul li .text:active {
+  opacity: 0.5;
+  background-color: #5c6062;
+}
